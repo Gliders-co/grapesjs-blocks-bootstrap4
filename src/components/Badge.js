@@ -11,7 +11,8 @@ export const BadgeBlock = (bm, label) => {
         category: 'Components',
         content: {
             type: 'badge',
-            content: 'New!'
+            content: 'New!',
+            dmode: 'translate'
         }
     });
 };

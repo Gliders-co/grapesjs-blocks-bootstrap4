@@ -1,15 +1,15 @@
 {
-  "name": "grapesjs-blocks-bootstrap4",
-  "version": "0.2.4",
+  "name": "ryvet-bootstrap-blocks",
+  "version": "0.2.7",
   "description": "GrapesJS Bootstrap v4 Blocks Plugin",
-  "main": "dist/grapesjs-blocks-bootstrap4.min.js",
+  "main": "dist/ryvet-bootstrap-blocks.min.js",
   "scripts": {
     "lint": "eslint src",
     "v:patch": "npm version --no-git-tag-version patch",
     "v:minor": "npm version --no-git-tag-version minor",
     "build": "npm run v:patch && webpack --env production",
     "build-dev": "npm run && webpack --env production",
-    "start": "webpack-cli serve --mode development --progress"
+    "start": "webpack-cli serve --mode development --port 8001 --progress"
   },
   "repository": {
     "type": "git",

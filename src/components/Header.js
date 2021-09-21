@@ -9,7 +9,8 @@ export const HeaderBlock = (bm, label) => {
         category: 'Typography',
         content: {
             type: 'header',
-            content: 'Bootstrap heading'
+            content: 'Bootstrap heading',
+            dmode: 'translate'
         }
     });
 };
@@ -50,7 +51,10 @@ export default (domc) => {
                         ],
                         label: 'Display Heading'
                     }
-                ].concat(textModel.prototype.defaults.traits)
+                ].concat(textModel.prototype.defaults.traits),
+                style:{
+                    display: 'inline-block',
+                }
             }),
 
         }, {

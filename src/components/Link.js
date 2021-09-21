@@ -14,7 +14,8 @@ export const LinkBlock = (bm, label) => {
         category: 'Basic',
         content: {
             type: 'link',
-            content: 'Link text'
+            content: 'Link text',
+            dmode: 'translate'
         }
     });
 };

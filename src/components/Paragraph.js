@@ -9,7 +9,8 @@ export const ParagraphBlock = (bm, label) => {
         category: 'Typography',
         content: {
             type: 'paragraph',
-            content: 'Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.'
+            content: 'Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.',
+            dmode: 'translate'
         }
     });
 };
@@ -33,7 +34,10 @@ export default (domc) => {
                         ],
                         label: 'Lead?'
                     }
-                ].concat(textModel.prototype.defaults.traits)
+                ].concat(textModel.prototype.defaults.traits),
+                style:{
+                    display: 'inline-block'
+                }
             })
         }, {
             isComponent(el) {

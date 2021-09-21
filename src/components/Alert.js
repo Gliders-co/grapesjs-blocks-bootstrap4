@@ -11,7 +11,8 @@ export const AlertBlock = (bm, label) => {
         category: 'Components',
         content: {
             type: 'alert',
-            content: 'This is an alert—check it out!'
+            content: 'This is an alert—check it out!',
+            dmode: 'translate'            
         }
     });
 };
@@ -26,7 +27,7 @@ export default (domc) => {
             defaults: Object.assign({}, textModel.prototype.defaults, {
                 'custom-name': 'Alert',
                 tagName: 'div',
-                classes: ['alert'],
+                classes: ['alert'],                
                 traits: [
                     {
                         type: 'class_select',
@@ -36,7 +37,11 @@ export default (domc) => {
                         ],
                         label: 'Context'
                     }
-                ].concat(textModel.prototype.defaults.traits)
+                ].concat(textModel.prototype.defaults.traits),
+                style:{
+                    display: 'inline-block',
+                    color: 'red'
+                }
             })
         }, {
             isComponent(el) {
